@@ -1,0 +1,34 @@
+<table>
+	<tr>
+		<td class="adm-detail-content-cell-l">Заголовок блока:</td>
+		<td class="adm-detail-content-cell-r">
+			<input placeholder="Заголовок" class="adm-input constructor-input" value="{{!it.value}}">
+		</td>
+	</tr>
+	<tr>
+		<td class="adm-detail-content-cell-l">Отступы блока:</td>
+		<td class="adm-detail-content-cell-r">
+			<label><input type="checkbox" class="nopt-checkbox" data-selected="{{!it.nopt}}" value="_nopt"> Убрать отступ сверху</label><br>
+			<label><input type="checkbox" class="nopb-checkbox" data-selected="{{!it.nopb}}" value="_nopb">Убрать отступ снизу</label><br>
+
+		</td>
+	</tr>
+	<tr>
+		<td class="adm-detail-content-cell-l">Разделители:</td>
+		<td class="adm-detail-content-cell-r">
+			<label><input type="checkbox" class="top-border-checkbox" data-selected="{{!it.top_border}}" value="_top-bordered"> Разделитель сверху</label><br>
+			<label><input type="checkbox" class="bottom-border-checkbox" data-selected="{{!it.bottom_border}}" value="_bottom-bordered">Разделитель снизу</label><br>
+
+		</td>
+	</tr>
+	<tr>
+		<td class="adm-detail-content-cell-l">Цвет блока:</td>
+		<td class="adm-detail-content-cell-r">
+			<select class="constructor-block-style" data-selected="{{!it.block_style}}">
+				<option value="">Белый</option>
+				<option value="_gray">Серый</option>
+			</select>
+		</td>
+	</tr>
+</table>
+

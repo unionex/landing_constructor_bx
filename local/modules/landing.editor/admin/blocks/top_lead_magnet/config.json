@@ -1,0 +1,13 @@
+{
+  "title": "02. Верхний Lead магнит",
+  "sort": "20",
+  "js": [
+    "/local/modules/landing.editor/admin/assets/jquery.file-upload-9/vendor/jquery.ui.widget.js",
+    "/local/modules/landing.editor/admin/assets/jquery.file-upload-9/jquery.iframe-transport.js",
+    "/local/modules/landing.editor/admin/assets/jquery.file-upload-9/jquery.fileupload.js"
+  ],
+  "templates": [
+    "image.html",
+	"items.html"
+  ]
+}

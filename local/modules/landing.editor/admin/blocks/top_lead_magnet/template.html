@@ -1,0 +1,94 @@
+<div class="sp-note">Заголовок</div>
+<input class="sp-item-text lead-m-title" type="text" name="head" placeholder="Заголовок" value="{{!it.title}}"/>
+<div class="sp-note">Подзаголовок</div>
+<textarea  class="sp-text lead-m-subtitle"  name="text" placeholder="Текст">{{!it.subtitle}}</textarea>
+<br>
+<h3>Настройка кнопки (Красная)</h3>
+<div class="sp-note">Тип кнопки <span class="info-red" data-title="Если поле ссылки пустое и выбрана форма, то по умолчанию форма обратной связи. Если нужна другая форма, то устанавливаем нужный тег формы. Например #automation-form. Если выбрано добавление в корзину, необходимо указать ид товара в поле ссылка.">(?)</span></div>
+<select name="buttonType" class="lead-m-text-btn-type">
+	<option value='' {{? it.buttonType == '' }}selected="selected"{{?}}>Ссылка</option>
+	<option value='form' {{? it.buttonType == 'form'}}selected="selected"{{?}}>Веб форма</option>
+	<option value='basket_button' {{? it.buttonType == 'basket_button'}}selected="selected"{{?}}>В корзину</option>
+</select>
+<div class="sp-note">Текст на кнопке</div>
+<input class="sp-item-text lead-m-text-btn" type="text" name="btnName" placeholder="Название кнопки" value="{{!it.buttonText}}"/>
+<div class="sp-note">Ссылка конпки</div>
+<input class="sp-item-text lead-m-text-btn-link" type="text" name="btnLink" placeholder="Ссылка копки" value="{{!it.buttonLink}}"/>
+<table>
+	<tbody>
+	<tr>
+		<td class="adm-detail-content-cell-r">
+			<label>
+				<input type="checkbox" class="has-rel-nofollow"
+					   data-selected="{{!it.nofollow}}"
+					   value="section-rd--has-rel-nofollow">
+				Nofollow
+			</label>
+		</td>
+	</tr>
+	</tbody>
+</table>
+<div class="sp-note">Заголовок веб формы</div>
+<input class="sp-item-text lead-m-text-btn-head" type="text" name="buttonHead" placeholder="Заголовок веб формы" value="{{!it.buttonHead}}"/>
+<div class="sp-note">Идентификатор формы</div>
+<input class="sp-item-text lead-m-text-btn-head" type="text" name="buttonIDForm" placeholder="Идентификатор формы" value="{{!it.buttonIDForm}}"/>
+<br><br>
+
+<h3>Настройка кнопки (Белая *Не заполнять если не нужна)</h3>
+<div class="sp-note">Тип кнопки <span class="info-red" data-title="Если поле ссылки пустое и выбрана форма, то по умолчанию форма обратной связи. Если нужна другая форма, то устанавливаем нужный тег формы. Например #automation-form. Если выбрано добавление в корзину, необходимо указать ид товара в поле ссылка.">(?)</span></div>
+<select name="buttonType2" class="lead-m-text-btn-type2">
+	<option value='' {{? it.buttonType2 == '' }}selected="selected"{{?}}>Ссылка</option>
+	<option value='form' {{? it.buttonType2 == 'form'}}selected="selected"{{?}}>Веб форма</option>
+	<option value='basket_button' {{? it.buttonType2 == 'basket_button'}}selected="selected"{{?}}>В корзину</option>
+</select>
+<div class="sp-note">Текст на кнопке</div>
+<input class="sp-item-text lead-m-text-btn2" type="text" name="btnName2" placeholder="Название кнопки" value="{{!it.buttonText2}}"/>
+<div class="sp-note">Ссылка конпки</div>
+<input class="sp-item-text lead-m-text-btn-link2" type="text" name="btnLink2" placeholder="Ссылка копки" value="{{!it.buttonLink2}}"/>
+<table>
+	<tbody>
+	<tr>
+		<td class="adm-detail-content-cell-r">
+			<label>
+				<input type="checkbox" class="has-rel-nofollow2"
+					   data-selected="{{!it.nofollow2}}"
+					   value="section-rd--has-rel-nofollow2">
+				Nofollow
+			</label>
+		</td>
+	</tr>
+	</tbody>
+</table>
+<div class="sp-note">Заголовок веб формы</div>
+<input class="sp-item-text lead-m-text-btn-head2" type="text" name="buttonHead2" placeholder="Заголовок веб формы" value="{{!it.buttonHead2}}"/>
+<div class="sp-note">Идентификатор формы</div>
+<input class="sp-item-text lead-m-text-btn-head2" type="text" name="buttonIDForm2" placeholder="Идентификатор формы" value="{{!it.buttonIDForm2}}"/>
+<br><br>
+<hr>
+<br>
+<input type="button" value="Выбрать из медиабиблиотеки" name="select-lead-m-img" class="lead-m-button-select-img">
+<br>
+<div class="sp-lead-m-result sp-clear"></div>
+<br>
+<div class="sp-note">Ссылки на соц.сети</div>
+<table>
+	<tbody>
+	<tr>
+		<td class="adm-detail-content-cell-r">
+			<input class="sp-item-text lead-m-title" type="text" name="linkFB" placeholder="Ссылка на FB" value="{{!it.linkFB}}"/>
+		</td>
+		<td class="adm-detail-content-cell-r">
+			<input class="sp-item-text lead-m-title" type="text" name="linkInst" placeholder="Ссылка на Instagram" value="{{!it.linkInst}}"/>
+		</td>
+		<td class="adm-detail-content-cell-r">
+			<input class="sp-item-text lead-m-title" type="text" name="linkVK" placeholder="Ссылка на VK" value="{{!it.linkVK}}"/>
+		</td>
+	</tr>
+	</tbody>
+</table>
+<br>
+<div class="sp-note">Заголовок панели тегов</div>
+<input class="sp-item-text" type="text" name="titleTag" placeholder="Заголовок панели тегов" value="{{!it.titleTag}}"/>
+<hr><br>
+<div class="sp-lists-result"></div>
+<input class="sp-lists-add" type="button" value="Добавить тег">

@@ -1,0 +1,18 @@
+<table>
+	<tr>
+		<td class="adm-detail-content-cell-l">Заголовок блока:</td>
+		<td class="adm-detail-content-cell-r">
+			<input class="sp-item-title" type="text" name="title" placeholder="Заголовок" value="{{!it.title}}"/>
+		</td>
+	</tr>
+	<tr>
+		<td class="adm-detail-content-cell-l">Цвет блока:</td>
+		<td class="adm-detail-content-cell-r">
+			<select class="constructor-block-style" data-selected="{{!it.block_style}}">
+				<option value="_white">Белый</option>
+				<option value="_gray">Серый</option>
+			</select>
+		</td>
+	</tr>
+</table>
+<textarea class="sp-text tinymce-4" placeholder="Текст">{{!it.value}}</textarea>

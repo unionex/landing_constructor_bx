@@ -1,0 +1,91 @@
+{{~it :tables:i}}
+    <div class="js-elem-delivery_table">
+        <h4>Таблица</h4>
+        <table class="main-delivery_table">
+            <tbody class="js-row-area">
+            {{var trCnt = "N";}}
+            {{~tables :table:index}}
+                {{? Object.keys(table).length == 1}}
+                    <tr>
+                        <td>Заголовок таблицы</td>
+                        <td colspan="3"><input type="text" class="element-body" name="th" value="{{=table.th}}"></td>
+                        <td><input type="button" class="delete-row" value="X"></td>
+                    </tr>
+                {{?}}
+                {{? Object.keys(table).length == 4 }}
+                    <tr>
+                        <td>
+                            <div>Название пункта</div>
+                            <textarea class="element-body" name="td0" placeholder="Название пункта">{{=table.td0}}</textarea>
+                        </td>
+                        <td class="td-icons">
+                            {{~table.td1 :img:j}}
+                                <div class='icon'>
+                                    <img src='{{=img[0].src}}'>
+                                    <input type='text' name='img-alt' placeholder='alt' value="{{=img[0].alt}}">
+                                    <input type='button' class='del-img' value='X'>
+                                    <hr class='bx-color-style'>
+                                </div>
+                            {{~}}
+                            <div>Добавить иконку</div>
+                            <input type="button" class="element-btn" value="+">
+                            <input type="hidden" class="element-body" name="td1" value="{{=table.td1}}">
+                        </td>
+                        <td><div>Цена</div><input type="text" class="element-body" name="td2" value="{{=table.td2}}" placeholder="Цена"></td>
+                        <td class="td3">
+							<div>Тип ссылки <span class="info-red" data-title="Если поле ссылки пустое и выбрана форма, то по умолчанию форма обратной связи. Если нужна другая форма, то устанавливаем нужный тег формы. Например #automation-form">(?)</span></div>
+							<select name="btnType">
+								<option value='' {{? table.td3.type == '' }}selected="selected"{{?}}>Ссылка</option>
+								<option value='form' {{? table.td3.type == 'form'}}selected="selected"{{?}}>Веб форма</option>
+								<option value='basket_button' {{? table.td3.type == 'basket_button'}}selected="selected"{{?}}>В корзину</option>
+							</select>
+							<div>Адрес ссылки</div>
+							<input type="text" class="element-body" name="btnLink" value="{{=table.td3.link}}" placeholder="Адрес ссылки">
+                            <br>
+                                        <label>
+                                            <input type="checkbox" class="has-rel-nofollow"
+                                                   data-selected="{{!table.td3.nofollow}}"
+                                                   value="section-rd--has-rel-nofollow">
+                                            Nofollow
+                                        </label>
+							<div>Заголовок ссылки</div>
+							<input type="text" class="element-body" name="btnHead" value="{{=table.td3.head}}" placeholder="Заголовок ссылки">
+							<div>Название ссылки</div>
+							<input type="text" class="element-body" name="btnName" value="{{=table.td3.name}}" placeholder="Название ссылки">
+						</td>
+                        <td><input type="button" class="delete-row" value="X"></td>
+                    </tr>
+                {{?}}
+                {{? Object.keys(table).length == 2 }}
+                    {{trCnt = "Y";}}
+                    <tr>
+                        <td>
+                            <div>Количество подгружаемых строк на "Показать еще"</div>
+                                <input type="text" name="cnt" value="{{=table.cnt}}" placeholder="Количество подгружаемых строк на Показать еще">
+                        </td>
+                        <td>
+                            <label><input type="checkbox" class="show-all" data-selected="{{=table.cntAll}}" {{? table.cntAll == 'Y'}} checked {{?}} value="Y"> Показать все</label>
+                        </td>
+                    </tr>
+                {{?}}
+            {{~}}
+            {{? trCnt == "N" }}
+            <tr>
+                <td>
+                    <div>Количество подгружаемых строк на "Показать еще"</div>
+                    <input type="text" name="cnt" value="" placeholder="Количество подгружаемых строк на Показать еще">
+                </td>
+                <td>
+                    <label><input type="checkbox" class="show-all" data-selected="" value="Y"> Показать все</label>
+                </td>
+            </tr>
+            {{?}}
+            </tbody>
+        </table>
+        <input type="button" class="add-header" data-index="{{!it.i}}" value="Добавить заголовок">
+        <input type="button" class="add-row" data-index="{{!it.i}}" value="Добавить строку">
+        <input type="button" class="table-remove" data-index="{{!it.i}}" value="Удалить таблицу">
+        <br>
+        <hr class="bx-color-style">
+    </div>
+{{~}}

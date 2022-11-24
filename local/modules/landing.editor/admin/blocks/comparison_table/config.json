@@ -1,0 +1,7 @@
+{
+  "title": "12. Таблица сравнения",
+  "sort": "120",
+  "templates": [
+    "select.html"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "title": "20. FAQ",
+  "sort": "200",
+  "js": [
+    "/local/modules/landing.editor/admin/assets/sanitizer.js"
+  ],
+  "templates": [
+    "items.html"
+  ]
+}

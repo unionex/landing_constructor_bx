@@ -1,0 +1,10 @@
+{
+  "title": "32. Выберите ваш проект (Блок слайдер с круглыми показателями)",
+  "sort": "320",
+  "js": [
+    "/local/modules/landing.editor/admin/assets/sanitizer.js"
+  ],
+  "templates": [
+	 "items.html"
+  ]
+}

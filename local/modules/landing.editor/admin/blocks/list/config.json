@@ -1,0 +1,10 @@
+{
+  "title": "10. Список",
+  "preview": "",
+  "sort": "100",
+  "js": [
+  ],
+  "templates": [
+    "items.html"
+  ]
+}

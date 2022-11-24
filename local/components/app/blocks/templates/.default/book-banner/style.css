@@ -1,0 +1,90 @@
+.book-banner {
+  background-color: #a9232c;
+  color: #fff;
+  box-sizing: border-box;
+}
+.book-banner._solutions .button {
+  padding: 12px 53px !important;
+breakpoint-up-to-md()
+}
+.book-banner._solutions-2 .book-banner__title {
+  margin-top: 0;
+}
+.book-banner__title {
+  font-weight: 800;
+  line-height: 1.266;
+  font-size: 214.28%;
+  margin-bottom: 18px;
+}
+.book-banner__img-holder {
+  margin-bottom: 32px;
+  box-sizing: border-box;
+  text-align: center;
+breakpoint-up-to-md()
+}
+.book-banner__img-holder img {
+  vertical-align: middle;
+  max-height: 100%;
+  box-sizing: border-box;
+  max-width: 300px;
+breakpoint-up-to-md()
+}
+.book-banner__container {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 984px;
+  padding: 30px 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.book-banner__subtitle {
+  font-weight: 300;
+  margin-bottom: 23px;
+  font-size: 142.85%;
+  line-height: 1.45;
+}
+.book-banner .button {
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  font-size: 142.85%;
+  line-height: 24px;
+  padding: 19px 20px 17px 20px;
+}
+.book-banner p:empty {
+  margin: 0;
+}
+@media screen and (min-width: 768px) {
+  .is-adaptive .book-banner__title {
+    font-size: 187.5%;
+    margin-bottom: 40px;
+  }
+  .is-adaptive .book-banner__subtitle {
+    margin-bottom: 40px;
+    font-size: 112.5%;
+    line-height: 1.55;
+  }
+  .is-adaptive .book-banner__img-holder {
+    position: absolute;
+    right: 16px;
+    height: 100%;
+    width: 100%;
+    max-width: 378px;
+    text-align: left;
+    margin: 0;
+    top: 0;
+  }
+  .is-adaptive .book-banner__img-holder img {
+    max-width: 100%;
+  }
+  .is-adaptive .book-banner__container {
+    padding: 50px 394px 70px 16px;
+  }
+  .is-adaptive .book-banner._solutions-2 .button {
+    padding: 12px 36px !important;
+  }
+  .is-adaptive .book-banner .button {
+    width: auto;
+  }
+}

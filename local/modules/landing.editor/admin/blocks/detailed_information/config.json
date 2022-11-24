@@ -1,0 +1,11 @@
+{
+  "title": "05. Подробная информация о продукте или услуге (контентная часть)",
+  "preview": "",
+  "sort": "50",
+  "js": [
+    "/local/modules/landing.editor/admin/assets/sanitizer.js"
+  ],
+  "templates": [
+    "items.html"
+  ]
+}

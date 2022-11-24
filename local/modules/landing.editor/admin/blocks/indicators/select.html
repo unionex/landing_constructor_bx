@@ -1,0 +1,9 @@
+{{~it.elements :element:index}}
+<div class="sp-item js-elem-company">
+    <input placeholder="Показатель" id="inp-num{{=element.uid}}" class="input-element-id" name="inp-num{{=element.uid}}" value="{{=element.selected_element_id}}" size="1" type="text"/>
+&nbsp;&nbsp;&nbsp;
+	<input placeholder="Подпись к нему" id="inp-sign{{=element.uid}}" class="input-element-value" name="inp-sign{{=element.uid}}" value="{{=element.selected_element_value}}" size="2" type="text"/>
+
+    <input type="button" class="button-remove"  value="X"/>
+</div>
+{{~}}

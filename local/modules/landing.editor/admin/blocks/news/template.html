@@ -1,0 +1,19 @@
+<div class="sp-item-heading">
+	<div class="sp-note">Общий заголовок</div>
+	<input class="js-heading" placeholder="Заголовок" type="text" value="{{!it.heading}}"/>
+</div>
+<div class="sp-note">Тип</div>
+<select name="type" class="checkIn">
+	<option value='news' {{? it.type == 'news'}}selected="selected"{{?}}>Новости</option>
+	<option value='article' {{? it.type == 'article'}}selected="selected"{{?}}>Статьи</option>
+</select>
+<div class="sp-note">Раздел</div>
+<div class="sp-result sp-clear"></div>
+<br><br>
+<table>
+	<tr>
+		<td class="adm-detail-content-cell-r">
+			<label><input type="checkbox" class="has-padding-bottom" data-selected="{{!it.hpb}}" value="section-rd--has-padding-bottom"> Отступ снизу</label>
+		</td>
+	</tr>
+</table>

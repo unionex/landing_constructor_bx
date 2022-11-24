@@ -1,0 +1,17 @@
+.sp-block-stages .sp-item {
+    padding-top: 6px;
+    border-top: 1px solid #000000;
+}
+
+.sp-block-stages .sp-item-heading {
+    padding-bottom: 6px;
+}
+
+.sp-block-stages input.js-heading {
+    width: 45%;
+}
+
+.sp-block-stages .sp-item input.sp-noindex,
+.sp-block-stages .sp-item-heading input.sp-noindex {
+    width: 13px !important;
+}

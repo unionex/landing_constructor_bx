@@ -1,0 +1,10 @@
+{{~it.elements :item:index}}
+<div class="sp-item sp-row">
+	<div class="sp-note">Текст пункта меню</div>
+	<input class="sp-item-text" type="text" name="name" placeholder="Название" value="{{!item.name}}"/>
+	<div class="sp-note">Заголовок в доп. информации в пункте</div>
+	<input class="sp-item-text" type="text" name="title" placeholder="Заголовок" value="{{!item.title}}"/>
+	<div class="sp-note">Текст в доп. информации в пункте</div>
+	<textarea  class="sp-text tinymce-18"  name="text" placeholder="Текст">{{!item.text}}</textarea>
+</div>
+{{~}}

@@ -1,0 +1,21 @@
+.sp-block-faq_block .sp-item {
+	padding-top: 6px;
+	border-top: 1px solid #000000;
+}
+
+.sp-block-faq_block .sp-item input:not(.button-select-medialib) {
+	width: 90%;
+	margin-bottom: 6px;
+}
+
+.sp-block-faq_block .sp-item-heading {
+	padding-bottom: 6px;
+}
+
+.sp-block-faq_block input.js-heading {
+	width: 45%;
+}
+
+.sp-block-faq_block .sp-item-heading .js-heading {
+	width: 90%;
+}

@@ -1,0 +1,17 @@
+.trumbowyg-modal-box .tarea-infos label {
+	height: auto;
+}
+.trumbowyg-modal-box .tarea-infos label .trumbowyg-input-infos {
+	text-align: center;
+}
+.trumbowyg-modal-box .tarea-infos label .trumbowyg-input-infos span {
+	width: auto;
+}
+.trumbowyg-modal-box .tarea-infos textarea {
+	width: 100%;
+	height: 200px;
+}
+
+.trumbowyg-dropdown {
+	z-index: 9;
+}

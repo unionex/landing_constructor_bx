@@ -1,0 +1,8 @@
+{
+  "title": "Текстовый блок с редактором и заголовком",
+  "sort": "330",
+  "js": [
+    "/local/modules/landing.editor/admin/assets/sanitizer.js"
+  ],
+  "optgroup": "projects"
+}

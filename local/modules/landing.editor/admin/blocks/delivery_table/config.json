@@ -1,0 +1,10 @@
+{
+  "title": "13. Таблица поставки",
+  "sort": "130",
+  "templates": [
+    "table.html",
+    "row.html",
+    "header.html",
+    "tabletpl.html"
+  ]
+}

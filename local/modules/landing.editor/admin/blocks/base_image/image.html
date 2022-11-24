@@ -1,0 +1,9 @@
+<div class="sp-base_image_item">
+    {{? it.file && it.file.SRC}}<img src="{{!it.file.SRC}}"/>{{?}}
+    <div class="sp-base_image_item-panel">
+        <input placeholder="Ссылка" class="sp-base_image_item-text" type="text" value="{{!it.desc}}">
+        <div class="sp-base_image_item-buttons">
+            <input class="sp-base_image_item-del" type="button" value="x" title="Удалить превью">
+        </div>
+    </div>
+</div>

@@ -1,0 +1,81 @@
+{{~it.elements :item:index}}
+<div class="sp-item sp-row">
+	<div class="sp-note">Заголовок слайда</div>
+	<input class="sp-item-text" type="text" name="title" placeholder="Заголовок" value="{{!item.title}}"/>
+	<div class="sp-note">Подзаголовок первого текстового блока</div>
+	<input class="sp-item-text" type="text" name="subtitle1" placeholder="Подзаголовок 1" value="{{!item.subtitle1}}"/>
+	<div class="sp-note">Текст первого текстового блока</div>
+	<textarea class="sp-item-text" name="text1" placeholder="Текст" cols="100" rows="10">
+		{{!item.text1 }}
+	</textarea>
+	<br/>
+	<div class="sp-note">Подзаголовок второго текстового блока</div>
+	<input class="sp-item-text" type="text" name="subtitle2" placeholder="Подзаголовок 2" value="{{!item.subtitle2}}"/>
+	<div class="sp-note">Текст второго текстового блока</div>
+	<textarea class="sp-item-text" name="text2" placeholder="Текст" cols="100" rows="10">
+		{{!item.text2}}
+	</textarea>
+	<br/>
+	<div class="sp-note">Текст в первом круге</div>
+	<input class="sp-item-text" type="text" name="circleText1" placeholder="Текст" value="{{!item.circleText1}}"/>
+	<div class="sp-note">Текст под первым кругом</div>
+	<input class="sp-item-text" type="text" name="circleSubText1" placeholder="Текст" value="{{!item.circleSubText1}}"/>
+
+	<div class="sp-note">Текст во втором круге</div>
+	<input class="sp-item-text" type="text" name="circleText2" placeholder="Текст" value="{{!item.circleText2}}"/>
+	<div class="sp-note">Текст под вторым кругом</div>
+	<input class="sp-item-text" type="text" name="circleSubText2" placeholder="Текст" value="{{!item.circleSubText2}}"/>
+
+	<div class="sp-note">Текст в третьем круге</div>
+	<input class="sp-item-text" type="text" name="circleText3" placeholder="Текст" value="{{!item.circleText3}}"/>
+	<div class="sp-note">Текст под третьим кругом</div>
+	<input class="sp-item-text" type="text" name="circleSubText3" placeholder="Текст" value="{{!item.circleSubText3}}"/>
+
+	<div class="sp-note">Текст в четвертом круге</div>
+	<input class="sp-item-text" type="text" name="circleText4" placeholder="Текст" value="{{!item.circleText4}}"/>
+	<div class="sp-note">Текст под четвертым кругом</div>
+	<input class="sp-item-text" type="text" name="circleSubText4" placeholder="Текст" value="{{!item.circleSubText4}}"/>
+	<br/>
+
+	<div>
+		<div style="float: left">
+			<input type="button" value="Выбрать из библиотеки" name="select-medialib"
+				   class="adm-designed-file button-select-medialib">
+			<div class="sp-base_image_item">
+				<input type="hidden" name="img" class="file-val" value="{{!item.img}}">
+				{{? item.img}}
+				<img src="{{!item.img}}"/>
+				{{?? !item.img}}
+				<img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+				{{?}}
+				<div class="sp-base_image_item-panel">
+					<div class="sp-base_image_item-buttons">
+						<input class="sp-base_image_item-del" type="button" value="x" title="Удалить превью">
+						<input class="alt-input" type="text" name="alt" value="{{!item.alt}}" placeholder="alt">
+					</div>
+				</div>
+			</div>
+		</div>
+<!--		retina-->
+		<div style="float: left">
+			<input type="button" value="Добавить retina" name="select-medialib"
+				   class="adm-designed-file button-select-medialib-retina">
+			<div class="sp-base_image_item">
+				<input type="hidden" name="img_retina" class="file-val_retina" value="{{!item.img_retina}}">
+				{{? item.img_retina}}
+				<img src="{{!item.img_retina}}"/>
+				{{?? !item.img_retina}}
+				<img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+				{{?}}
+				<div class="sp-base_image_item-panel">
+					<div class="sp-base_image_item-buttons">
+						<input class="sp-base_image_item-del-retina" type="button" value="x" title="Удалить превью">
+						<input class="alt-input" type="text" name="alt_retina" value="{{!item.alt_retina}}" placeholder="alt">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+</div>
+{{~}}

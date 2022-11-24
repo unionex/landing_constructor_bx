@@ -1,0 +1,11 @@
+{
+  "title": "18. Возможности",
+  "preview": "",
+  "sort": "180",
+  "js": [
+    "/local/modules/landing.editor/admin/assets/sanitizer.js"
+  ],
+  "templates": [
+    "items.html"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "title": "28. Новости/Статьи",
+  "preview": "",
+  "sort": "280",
+  "js": [
+    "/local/modules/landing.editor/admin/assets/sanitizer.js"
+  ],
+  "templates": [
+	"list.html"
+  ]
+}

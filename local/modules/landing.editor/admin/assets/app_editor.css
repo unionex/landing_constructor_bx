@@ -1,0 +1,385 @@
+/* common */
+.sp-file {
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+    color: #3f4b54;
+    padding: 6px 15px 5px;
+    line-height: 16px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    border: 0;
+    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, .11), 0 1px 1px rgba(0, 0, 0, .3), inset 0 1px #fff, inset 0 0 1px rgba(255, 255, 255, .5);
+    box-shadow: 0 0 1px rgba(0, 0, 0, .3), 0 1px 1px rgba(0, 0, 0, .3), inset 0 1px 0 #fff, inset 0 0 1px rgba(255, 255, 255, .5);
+    background-color: #e0e9ec;
+    background-image: -webkit-linear-gradient(bottom, #d7e3e7, #fff) !important;
+    background-image: -moz-linear-gradient(bottom, #d7e3e7, #fff) !important;
+    background-image: -ms-linear-gradient(bottom, #d7e3e7, #fff) !important;
+    background-image: -o-linear-gradient(bottom, #d7e3e7, #fff) !important;
+    background-image: linear-gradient(bottom, #d7e3e7, #fff) !important;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    height: 18px;
+    text-shadow: 0 1px rgba(255, 255, 255, 0.7);
+    vertical-align: middle;
+    -webkit-font-smoothing: antialiased
+}
+
+.sp-file:hover {
+    text-decoration: none;
+    background: #f3f6f7 !important;
+    background-image: -webkit-linear-gradient(top, #f8f8f9, #f2f6f8) !important;
+    background-image: -moz-linear-gradient(top, #f8f8f9, #f2f6f8) !important;
+    background-image: -ms-linear-gradient(top, #f8f8f9, #f2f6f8) !important;
+    background-image: -o-linear-gradient(top, #f8f8f9, #f2f6f8) !important;
+    background-image: linear-gradient(top, #f8f8f9, #f2f6f8) !important
+}
+
+.sp-file:active {
+    background-color: #b7c4c9 !important;
+    -webkit-box-shadow: inset 0 1px 1px 1px rgba(103, 109, 123, .78);
+    box-shadow: inset 0 1px 1px 1px rgba(103, 109, 123, .78);
+    background-image: -webkit-linear-gradient(top, rgba(179, 194, 200, .96), rgba(202, 215, 219, .96)) !important;
+    background-image: -moz-linear-gradient(top, rgba(179, 194, 200, .96), rgba(202, 215, 219, .96)) !important;
+    background-image: -ms-linear-gradient(top, rgba(179, 194, 200, .96), rgba(202, 215, 219, .96)) !important;
+    background-image: -o-linear-gradient(top, rgba(179, 194, 200, .96), rgba(202, 215, 219, .96)) !important;
+    background-image: linear-gradient(top, rgba(179, 194, 200, .96), rgba(202, 215, 219, .96)) !important;
+    border-top: transparent;
+}
+
+.sp-file input[type=file] {
+    cursor: pointer;
+    direction: ltr;
+    font-size: 200px !important;
+    margin: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+}
+
+.sp-clear:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.sp-table {
+    display: table;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.sp-table .sp-row {
+    display: table-row;
+}
+
+.sp-table .sp-col {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.sp-note {
+    font-size: 14px !important;
+    color: #aaa !important;
+	margin-bottom: 5px;
+	margin-top: 3px;
+}
+
+span.info-red {
+	display: inline-block; /* Строчно-блочный элемент */
+	position: relative; /* Относительное позиционирование */
+	color: red;
+	cursor: default;
+	width: 450px;
+}
+
+span.info-red:hover::after {
+	content: attr(data-title); /* Выводим текст */
+	position: absolute; /* Абсолютное позиционирование */
+	left: 20%;
+	top: 30%; /* Положение подсказки */
+	z-index: 1; /* Отображаем подсказку поверх других элементов */
+	background: rgba(255, 255, 230, 0.9); /* Полупрозрачный цвет фона */
+	font-family: Arial, sans-serif; /* Гарнитура шрифта */
+	font-size: 11px; /* Размер текста подсказки */
+	padding: 5px 10px; /* Поля */
+	border: 1px solid #333; /* Параметры рамки */
+}
+
+/* editor */
+
+.sp-x-box {
+    margin: 10px 0 0;
+    padding-bottom: 10px;
+    border-bottom:1px solid #DDD;
+}
+
+.sp-x-layout-mode .sp-x-box, .sp-x-layout-mode-block.sp-x-box {
+    background: #e0e8ea;
+    margin: 10px 5px 10px;
+}
+
+.sp-x-box-placeholder {
+    border: 1px dotted black;
+    height: 100px;
+    margin: 10px 0 10px;
+}
+
+.sp-x-layout-mode .sp-x-box-placeholder, .sp-x-layout-mode-block .sp-x-box-placeholder {
+    margin: 10px 5px;
+    height: 20px;
+}
+
+.sp-x-lt-col {
+    min-height: 84px;
+    margin-bottom: 10px;
+}
+
+.sp-x-layout-mode .sp-x-lt-col, .sp-x-layout-mode-block .sp-x-lt-col {
+    min-height: 74px;
+    margin-bottom: 0;
+    float: left;
+    /*display: table-cell;*/
+    /*vertical-align: top;*/
+}
+
+.sp-x-layout-mode .sp-x-lt-type1 .sp-x-lt-col, .sp-x-layout-mode-block .sp-x-lt-type1 .sp-x-lt-col{
+    width: 100%;
+}
+.sp-x-layout-mode .sp-x-lt-type2 .sp-x-lt-col, .sp-x-layout-mode-block .sp-x-lt-type2 .sp-x-lt-col{
+    width: 50%;
+}
+.sp-x-layout-mode .sp-x-lt-type3 .sp-x-lt-col, .sp-x-layout-mode-block .sp-x-lt-type3 .sp-x-lt-col{
+    width: 33.3333%;
+}
+
+.sp-x-layout-mode .sp-x-lt-type4 .sp-x-lt-col, .sp-x-layout-mode-block .sp-x-lt-type4 .sp-x-lt-col{
+    width: 25%;
+}
+
+.sp-x-box-panel,
+.bx-core-adm-dialog div.sp-x-box-panel {
+    position: relative;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.sp-x-box-settings {
+    display: inline-block;
+    /*margin-bottom: 10px;*/
+    /*text-align: left;*/
+    /*position: absolute;*/
+    /*left: 0;*/
+}
+
+.sp-x-layout-mode .sp-x-box-settings, .sp-x-layout-mode-block .sp-x-box-settings {
+    display: none;
+}
+
+.sp-x-box-settings-item {
+    margin-left: 5px;
+}
+
+.sp-x-layout-mode .sp-x-box-panel, .sp-x-layout-mode-block .sp-x-box-panel {
+    text-align: center;
+}
+
+.sp-x-lt-head,
+.bx-core-adm-dialog div.sp-x-lt-head {
+    text-align: center;
+    border-bottom: 1px dashed #ccc;
+    padding: 5px 0;
+    position: relative;
+}
+
+.sp-x-layout-mode .sp-x-lt-head, .sp-x-layout-mode-block .sp-x-lt-head,
+.bx-core-adm-dialog .sp-x-layout-mode div.sp-x-lt-head, .bx-core-adm-dialog .sp-x-layout-mode-block div.sp-x-lt-head {
+    text-align: center;
+    background: #ddd;
+    border: none;
+    margin: 0 5px;
+}
+
+.sp-x-box-title {
+    font-weight: bold !important;
+}
+
+.sp-x-lt-buttons {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.sp-x-lt-buttons span {
+    cursor: pointer;
+    text-decoration: none;
+    border: 1px solid #ccc;
+    color: #aaa;
+    display: inline-block;
+    text-align: center;
+    min-width: 18px;
+    padding: 1px 5px;
+}
+
+.sp-x-layout-mode .sp-x-lt-buttons span, .sp-x-layout-mode-block .sp-x-lt-buttons span {
+    background: #ddd;
+}
+
+.sp-x-lt-buttons span:hover,
+.sp-x-lt-buttons span.active{
+    background: #FFEBC1;
+    color: #d00;
+}
+
+.sp-x-box-buttons {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.sp-x-box-buttons span {
+    cursor: pointer;
+    text-decoration: none;
+    border: 1px solid #ccc;
+    color: #aaa;
+    display: inline-block;
+    text-align: center;
+    min-width: 18px;
+    padding: 1px 5px;
+}
+
+.sp-x-layout-mode .sp-x-box-buttons span, .sp-x-layout-mode-block .sp-x-box-buttons span{
+    background: #e0e8ea;
+}
+
+.sp-x-box-buttons span:hover,
+.sp-x-box-buttons span.active{
+    background: #FFEBC1;
+    color: #d00;
+}
+
+.sp-x-options-link {
+    float: right;
+    text-decoration: none;
+}
+
+/*.sp-x-layout-mode .sp-x-box-copy,*/
+/*.sp-x-layout-mode .sp-x-lt-copy,*/
+/*.sp-x-layout-mode .sp-x-lt-paste{*/
+
+.sp-x-layout-mode .sp-x-box-up, .sp-x-layout-mode-block .sp-x-box-up,
+.sp-x-layout-mode .sp-x-box-dn, .sp-x-layout-mode-block .sp-x-box-dn{
+    display: none;
+}
+
+.sp-x-lt-grid {
+    position: relative;
+}
+
+.sp-x-lt-grid:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.sp-x-lt-grid:last-child {
+    margin-bottom: 20px;
+}
+
+.sp-x-layout-mode .sp-x-lt-grid:last-child, .sp-x-layout-mode-block .sp-x-lt-grid:last-child {
+    margin-bottom: 10px;
+}
+
+.sp-x-layout-mode .sp-x-lt-grid, .sp-x-layout-mode-block .sp-x-lt-grid {
+    width: 100%;
+}
+
+.sp-x-box .sp-x-box-handle {
+    cursor: move;
+}
+
+.sp-x-box.ui-sortable-helper {
+    background: #e0e8ea;
+    padding: 10px 10px 20px;
+}
+
+.sp-x-layout-mode .sp-x-box.ui-sortable-helper, .sp-x-layout-mode-block .sp-x-box.ui-sortable-helper {
+    padding: 0;
+}
+
+.sp-x-layout-mode .sp-x-box-block, .sp-x-layout-mode-block .sp-x-box-block {
+    display: none;
+}
+
+.sp-x-lt-curtype {
+    margin-left: 5px;
+    color: #aaa;
+}
+
+.sp-x-lt-title {
+    cursor: pointer;
+}
+
+.sp-x-lt-title.active {
+    color: #d00;
+}
+
+.sp-x-lt-types {
+    display: none;
+    position: absolute;
+    left: 0;
+    background: #eee;
+    color: #aaa;
+    border: 2px solid #ccc;
+    text-align: left;
+    z-index: 2;
+    width: 100%;
+}
+
+.sp-x-lt-types-group {
+    margin-bottom: 10px;
+    padding: 8px 8px 0 8px;
+}
+
+.sp-x-lt-types span {
+    display: inline-block;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    padding: 2px;
+    margin: 2px;
+    min-width: 38px;
+    text-align: center;
+}
+
+.sp-x-lt-types span:hover,
+.sp-x-lt-types span.active {
+    color: #d00;
+    background: #FFEBC1;
+}
+.sp-add-block-select {
+    margin: 0 5px 0 18px;
+}
+
+.sp-table.sp-add-block-select {
+    width: 95%;
+}
+
+.sp-block-text .trumbowyg-textarea {
+    min-height:70px;
+}
+
+.sp-block-text .trumbowyg-editor{
+    min-height: 70px;
+    padding: 5px;
+}
+
+.sp-block-text .trumbowyg-box {
+    min-height: 70px;
+}

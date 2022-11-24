@@ -1,0 +1,27 @@
+.slider-statuses__item-title {
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.slider-statuses__item-col:first-child {
+  color: #404040;
+  font-size: 16px;
+breakpoint-md()
+}
+.slider-statuses__pagen {
+  padding-top: 21px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+.slider-statuses__pagen .swiper-pagination-bullet {
+  margin: 0 2px !important;
+  border-radius: 50% !important;
+  background-color: transparent !important;
+  border: 2px solid #f4b744;
+  width: 10px;
+  height: 10px;
+  opacity: 1;
+}
+.slider-statuses__pagen .swiper-pagination-bullet-active {
+  background-color: #f4b744 !important;
+}

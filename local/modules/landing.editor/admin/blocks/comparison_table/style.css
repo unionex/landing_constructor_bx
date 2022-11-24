@@ -1,0 +1,82 @@
+.sp-block-service_package_one {
+	text-align: center;
+	color: #646972;
+	line-height: 1.2;
+	letter-spacing: .02em;
+	text-shadow: 1px 1px 0 #ffffff;
+	display: block;
+	background-color: #ffffff;
+	-webkit-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12), 0 2px 4px -1px rgba(0, 0, 0, .2);
+	-moz-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12), 0 2px 4px -1px rgba(0, 0, 0, .2);
+	box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12), 0 2px 4px -1px rgba(0, 0, 0, .2);
+	padding: 15px;
+}
+
+.sp-block-service_package_one .title--top {
+	vertical-align: top;
+}
+
+.sp-block-service_package_one input.js-heading {
+	width: 78%;
+}
+
+.sp-block-service_package_one textarea.js-description {
+	width: 78%;
+}
+
+input.input-element {
+	width: 400px;
+}
+
+input.button-remove, input.button-add {
+	width: 50px;
+}
+
+table.main-comparison_table{
+	width: 100%;
+	border-collapse:collapse;
+	border-spacing:0
+}
+table.main-comparison_table, .main-comparison_table td, .main-comparison_table th {
+	border: 1px solid #DDD;
+}
+.main-comparison_table td, .main-comparison_table th {
+	padding: 3px;
+	width: 30px;
+	height: 35px;
+}
+.main-comparison_table th {
+	background-color: #7accee;
+}
+
+.sp-item input.button-tire, .sp-item input.button-true {
+	width: 30px;
+}
+
+td.td-button-delete {
+	width: 10%;
+}
+
+hr.bx-color-style {
+	border-top: 1px solid #DDD;
+}
+
+#bx-admin-prefix table.main-comparison_table {
+	border: 1px solid #DDD;
+}
+
+input.table-remove {
+	float: right;
+}
+
+table.main-comparison_table td input {
+	width: 90%
+}
+
+table.main-comparison_table td.name {
+	width: 10%;
+}
+
+.heading-comparison_table input {
+	width: 90%;
+}

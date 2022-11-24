@@ -1,0 +1,30 @@
+<div class="sp-x-lt-grid sp-x-lt-type{{=it.columns.length}}">
+    {{~it.columns :col:index}}
+    <div class="sp-x-lt-col">
+        <!--<div class="sp-x-lt-head">-->
+            <!--{{? it.enableChange && it.classes}}-->
+            <!--<span class="sp-x-lt-title">Колонка {{=index+1}}</span>-->
+            <!--{{??}}-->
+            <!--<span>Колонка {{=index+1}}</span>-->
+            <!--{{?}}-->
+            <!--<span class="sp-x-lt-curtype">{{=col}}</span>-->
+            <!--{{?it.enableChange}}-->
+            <!--<div class="sp-x-lt-buttons">-->
+                <!--<span title="Вставить блоки в колонку" class="sp-x-lt-paste">&crarr;</span>-->
+                <!--<span title="Переместить" class="{{?it.enableChange}}sp-x-box-handle{{?}}  sp-x-lt-move">&#10021;</span>-->
+                <!--<span title="Копировать блоки в колонке" class="sp-x-lt-copy">&equiv;</span>-->
+                <!--<span title="Удалить колонку" class="sp-x-lt-del">x</span>-->
+                <!--<span title="Изменить количество колонок" class="{{?it.enableChange}}sp-x-columns-handle{{?}} sp-x-columns-change">&#10869;</span>-->
+            <!--</div>-->
+            <!--{{?}}-->
+        <!--</div>-->
+        <!--{{?it.enableChange && it.classes}}-->
+        <div class="sp-x-lt-types">
+            {{~it.classes :group}}
+            <div class="sp-x-lt-types-group">{{~group :size}}<span>{{=size}}</span>{{~}}</div>
+            {{~}}
+        </div>
+        {{?}}
+    </div>
+    {{~}}
+</div>

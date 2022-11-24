@@ -1,0 +1,95 @@
+.sp-block-ebook_banner .sp-item {
+    padding-top: 6px;
+    border-top: 1px solid #000000;
+}
+
+.sp-block-ebook_banner .sp-item input:not(.button-select-medialib):not(.button-select-medialib-retina) {
+    width: 90%;
+    margin-bottom: 6px;
+}
+
+.sp-block-ebook_banner .sp-item-heading {
+    padding-bottom: 6px;
+}
+
+.sp-block-ebook_banner input.js-heading {
+    width: 45%;
+}
+
+/* image */
+.sp-block-ebook_banner .sp-base_image_item {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: #ccc;
+    margin: 0 5px 5px 0;
+    border: 2px solid #ccc;
+}
+
+.sp-block-ebook_banner .sp-base_image_item img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+
+.sp-block-ebook_banner .sp-base_image_item-panel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background: #eee;
+    border: 2px solid #ccc;
+    display: none;
+    padding: 8px;
+}
+
+
+.sp-block-ebook_banner .sp-base_image_item:hover {
+    border: 2px solid #d00;
+}
+
+.sp-block-ebook_banner .sp-base_image_item:hover .sp-base_image_item-panel {
+    display: block;
+}
+
+.sp-block-ebook_banner .sp-base_image_item-panel input[type=text] {
+    width: 300px;
+    margin-top: 30px;
+}
+
+.sp-block-ebook_banner .sp-base_image_item-buttons {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.sp-block-ebook_banner .sp-file {
+    margin-bottom: 10px;
+}
+
+.button-select-medialib, .button-select-medialib-retina {
+    margin: 0 0 10px 22px;
+}
+
+.sp-block-ebook_banner .adm-designed-file.button-select-medialib,
+.sp-block-ebook_banner .adm-designed-file.button-select-medialib-retina {
+    width: 200px;
+}
+
+.sp-block-ebook_banner .sp-item-text.heading-title {
+    width: 90%;
+}
+
+.sp-block-ebook_banner .sp-base_image_item-panel input.sp-base_image_item-del,
+.sp-block-ebook_banner .sp-base_image_item-panel input.sp-base_image_item-del-retina {
+	width: 35px;
+}
+
+.sp-block-ebook_banner .sp-base_image_item-panel input.alt-input {
+	width: 150px;
+}
+.clearfix{
+	display: block;
+	content: "";
+	clear: both;
+}

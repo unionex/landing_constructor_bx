@@ -1,0 +1,79 @@
+<div>
+	<div style="float: left">
+		<input type="button" value="Выбрать из библиотеки" name="select-medialib"
+			   class="adm-designed-file button-select-medialib"><br>
+		<span>размер картинки 513 x 387 px</span>
+		<div class="sp-base_image_item">
+			<input type="hidden" name="icon" class="file-val" value="{{!it.icon}}">
+			{{? it.icon}}
+			<img src="{{!it.icon}}"/>
+			{{?? !it.icon}}
+			<img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+			{{?}}
+			<div class="sp-base_image_item-panel">
+				<div class="sp-base_image_item-buttons">
+					<input class="sp-base_image_item-del" type="button" value="x" title="Удалить превью">
+					<input class="alt-input" type="text" name="alt" value="{{!it.alt}}" placeholder="alt">
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--retina-->
+	<div style="float: left">
+		<input type="button" value="Добавить retina" name="select-medialib"
+			   class="adm-designed-file button-select-medialib-retina"><br>
+		<span>размер картинки 513 x 387 px</span>
+		<div class="sp-base_image_item">
+			<input type="hidden" name="icon_retina" class="file-val_retina" value="{{!it.icon_retina}}">
+			{{? it.icon_retina}}
+			<img src="{{!it.icon_retina}}"/>
+			{{?? !it.icon_retina}}
+			<img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+			{{?}}
+			<div class="sp-base_image_item-panel">
+				<div class="sp-base_image_item-buttons">
+					<input class="sp-base_image_item-del-retina" type="button" value="x" title="Удалить превью">
+					<input class="alt-input" type="text" name="alt_retina" value="{{!it.alt_retina}}" placeholder="alt">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="clearfix"></div>
+<div class="sp-note">Заголовок баннера</div>
+<input class="sp-item-text heading-title" type="text" name="head" placeholder="Заголовок" value="{{!it.head}}"/>
+<div class="sp-note">Текст баннера</div>
+<textarea class="sp-text tinymce-24" name="text" placeholder="Текст">{{!it.text}}</textarea>
+<div class="sp-note">Тип кнопки <span class="info-red"
+									  data-title="Если поле ссылки пустое и выбрана форма, то по умолчанию форма обратной связи. Если нужна другая форма, то устанавливаем нужный тег формы. Например #automation-form">(?)</span>
+</div>
+<select name="btnType">
+	<option value='' {{? it.btnType==
+	'' }}selected="selected"{{?}}>Ссылка</option>
+	<option value='form' {{? it.btnType==
+	'form'}}selected="selected"{{?}}>Веб форма</option>
+	<option value='basket_button' {{? it.btnType==
+	'basket_button'}}selected="selected"{{?}}>В корзину</option>
+</select>
+<div class="sp-note">Название кнопки</div>
+<input class="sp-item-text" type="text" name="btnName" placeholder="Название кнопки" value="{{!it.btnName}}"/>
+<div class="sp-note">Ссылка конпки</div>
+<input class="sp-item-text" type="text" name="btnLink" placeholder="Ссылка копки" value="{{!it.btnLink}}"/>
+<table>
+	<tbody>
+	<tr>
+		<td class="adm-detail-content-cell-r">
+			<label>
+				<input type="checkbox" class="has-rel-nofollow"
+					   data-selected="{{!it.nofollow}}"
+					   value="section-rd--has-rel-nofollow">
+				Nofollow
+			</label>
+		</td>
+	</tr>
+	</tbody>
+</table>
+<div class="sp-note">Заголовок веб формы</div>
+<input class="sp-item-text" type="text" name="btnHead" placeholder="Заголовок веб формы" value="{{!it.btnHead}}"/>
+<div class="sp-note">Идентификатор формы</div>
+<input class="sp-item-text" type="text" name="buttonIDForm" placeholder="Идентификатор формы" value="{{!it.buttonIDForm}}"/>

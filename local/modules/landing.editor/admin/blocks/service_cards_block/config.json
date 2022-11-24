@@ -1,0 +1,10 @@
+{
+  "title": "11.1 Карточки услуг",
+  "preview": "",
+  "sort": "115",
+  "js": [
+  ],
+  "templates": [
+    "items.html"
+  ]
+}

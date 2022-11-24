@@ -1,0 +1,9 @@
+{
+  "title": "Показатели",
+  "preview": "",
+  "sort": "350",
+  "templates": [
+	"select.html"
+  ],
+  "optgroup": "projects"
+}

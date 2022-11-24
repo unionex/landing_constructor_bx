@@ -1,0 +1,111 @@
+{{~it.elements :element:index}}
+<div class="sp-item js-elem">
+	<h3>Элемент</h3>
+	<div class="sp-note">Картикнка у блока</div>
+	<input type="button" value="Выбрать из библиотеки" name="select-medialib" class="adm-designed-file button-select-medialib">
+	<div class="sp-base_image_item">
+		<input type="hidden" name="icon" class="file-val" value="{{!element.icon}}">
+		{{? element.icon}}
+		<img src="{{!element.icon}}"/>
+		{{?? !element.icon}}
+		<img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+		{{?}}
+		<div class="sp-base_image_item-panel">
+			<div class="sp-base_image_item-buttons">
+				<input class="sp-base_image_item-del" type="button" value="x" title="Удалить превью">
+				<input class="alt-input" type="text" name="alt" value="{{!element.alt}}" placeholder="alt">
+			</div>
+		</div>
+	</div>
+	<div class="sp-note">Заголовок у блока</div>
+	<input class="sp-item-text" type="text" name="title" placeholder="Заголовок у блока" value="{{!element.title}}"/>
+	<div class="sp-note">Подзаголовок у блока</div>
+	<input class="sp-item-text" type="text" name="subtitle" placeholder="Подзаголовок у блока" value="{{!element.subtitle}}"/>
+	<div class="sp-note">Ссылка заголовка</div>
+	<input class="sp-item-text" type="text" name="titleLink" placeholder="Ссылка заголовка (Не указывать если не нужно)" value="{{!element.titleLink}}"/>
+	<br>
+	<h3>Что входит в стоимость</h3>
+	<table>
+		<tbody>
+		<tr>
+			<td class="adm-detail-content-cell-r">
+				<label>
+					<input type="checkbox" class="has-update"
+						   data-selected="{{!element.update}}"
+						   value="Y">
+					Обновление
+				</label>
+			</td>
+			<td class="adm-detail-content-cell-r">
+				<label>
+					<input type="checkbox" class="has-free-time"
+						   data-selected="{{!element.freeTime}}"
+						   value="Y">
+					Бесплатные часы
+				</label>
+			</td>
+			<td class="adm-detail-content-cell-r">
+				<label>
+					<input type="checkbox" class="has-delivery"
+						   data-selected="{{!element.delivery}}"
+						   value="Y">
+					Доставка
+				</label>
+			</td>
+			<td class="adm-detail-content-cell-r">
+				<label>
+					<input type="checkbox" class="has-its-3-mons"
+						   data-selected="{{!element.its3Mons}}"
+						   value="Y">
+					ИТС 3 мес.
+				</label>
+			</td>
+			<td class="adm-detail-content-cell-r">
+				<label>
+					<input type="checkbox" class="has-report"
+						   data-selected="{{!element.report}}"
+						   value="Y">
+					Отчетность
+				</label>
+			</td>
+			<td class="adm-detail-content-cell-r">
+				<label>
+					<input type="checkbox" class="has-install"
+						   data-selected="{{!element.install}}"
+						   value="Y">
+					Установка
+				</label>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+	<br>
+	<h3>Настройка ссылки</h3>
+	<div class="sp-note">Цена</div>
+	<input class="sp-item-text" type="text" name="price" placeholder="Цена" value="{{!element.price}}"/>
+	<div class="sp-note">Тип ссылки <span class="info-red" data-title="Если поле ссылки пустое и выбрана форма, то по умолчанию форма обратной связи. Если нужна другая форма, то устанавливаем нужный тег формы. Например #automation-form">(?)</span></div>
+	<select name="linkType">
+		<option value='' {{? element.linkType == '' }}selected="selected"{{?}}>Ссылка</option>
+		<option value='form' {{? element.linkType == 'form'}}selected="selected"{{?}}>Веб форма</option>
+		<option value='basket_button' {{? element.linkType == 'basket_button'}}selected="selected"{{?}}>В корзину</option>
+	</select>
+	<div class="sp-note">Ссылка "Подробнее"</div>
+	<table>
+		<tbody>
+		<tr>
+			<td class="adm-detail-content-cell-r">
+				<label>
+					<input type="checkbox" class="has-rel-nofollow"
+						   data-selected="{{!element.nofollow}}"
+						   value="section-rd--has-rel-nofollow">
+					Nofollow
+				</label>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+	<input class="sp-item-text" type="text" name="link" placeholder='Ссылка "Подробнее"' value="{{!element.link}}"/>
+	<div class="sp-note">Заголовок веб формы</div>
+	<input class="sp-item-text" type="text" name="linkTitle" placeholder="Заголовок веб формы" value="{{!element.linkTitle}}"/>
+</div>
+{{~}}

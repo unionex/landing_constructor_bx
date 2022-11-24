@@ -1,0 +1,6 @@
+<select name="sections" size="10" multiple="multiple">
+	<option value='' {{? it.sections == ''}}selected="selected"{{?}}>Все</option>
+	{{~it.json :element:index}}
+	<option value='{{=element}}' {{? it.sections.indexOf(element) !== -1 }}selected="selected"{{?}}>{{=element}}</option>
+	{{~}}
+</select>

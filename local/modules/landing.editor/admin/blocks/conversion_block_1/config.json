@@ -1,0 +1,7 @@
+{
+  "title": "Конверсионный блок 1 (устарел)",
+  "sort": "320",
+  "js": [
+    "/local/modules/landing.editor/admin/assets/sanitizer.js"
+  ]
+}

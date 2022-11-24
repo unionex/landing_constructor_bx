@@ -1,0 +1,10 @@
+{
+  "title": "04. Иконки преимуществ",
+  "preview": "",
+  "sort": "40",
+  "js": [
+  ],
+  "templates": [
+    "items.html"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "title": "14. Статусы и регалии",
+  "sort": "150",
+  "templates": [
+    "select.html"
+  ]
+}

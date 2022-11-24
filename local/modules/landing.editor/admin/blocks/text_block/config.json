@@ -1,0 +1,7 @@
+{
+  "title": "03. Вступительная информация о продукте или услуге",
+  "sort": "30",
+  "js": [
+    "/local/modules/landing.editor/admin/assets/sanitizer.js"
+  ]
+}

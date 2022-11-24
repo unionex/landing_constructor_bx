@@ -1,0 +1,106 @@
+<br>
+<hr class="bx-color-style">
+<div class="heading-comparison_table">Заголовок блока : <input placeholder="Таблица сравнения"
+                                                               class="adm-input title-comparison-input"
+                                                               value="{{!it.title}}"></div>
+<hr class="bx-color-style">
+<table class="main-comparison_table">
+    <tbody>
+	<tr class="odd">
+		<td>Заголовоко осноного столбца</td>
+		<td class="head-colspan" colspan="3"><input placeholder="Заголовоко осноного столбца" type="text" name="firstFooterTitle" value="{{=it.firstFooterTitle}}"></td>
+	</tr>
+	<tr class="even">
+		<td class="name">Название столбца</td>
+		<td><input placeholder="Название столбца 1" type="text" name="title1" value="{{=it.header.th1}}"></td>
+		<td class="td2"><input placeholder="Название столбца 2" type="text" name="title2" value="{{=it.header.th2}}"></td>
+		<td class="td3"><input placeholder="Название столбца 3" type="text" name="title3" value="{{=it.header.th3}}"></td>
+	</tr>
+	<tr class="even">
+		<td class="name">Цена в столбце</td>
+		<td><input placeholder="Цена 1" type="text" name="price1" value="{{=it.footer.ft1.price}}"></td>
+		<td class="td2"><input placeholder="Цена 2" type="text" name="price2" value="{{=it.footer.ft2.price}}"></td>
+		<td class="td3"><input placeholder="Цена 3" type="text" name="price3" value="{{=it.footer.ft3.price}}"></td>
+	</tr>
+    <tr class="odd">
+        <td class="name">Цена в столбце</td>
+        <td><input placeholder="Цена 1" type="text" name="price1" value="{{=it.footer.ft1.price}}"></td>
+        <td class="td2"><input placeholder="Цена 2" type="text" name="price2" value="{{=it.footer.ft2.price}}"></td>
+        <td class="td3"><input placeholder="Цена 3" type="text" name="price3" value="{{=it.footer.ft3.price}}"></td>
+    </tr>
+    <tr class="even">
+        <td class="name">Название кнопки</td>
+        <td><input placeholder="Кнопка 1" type="text" name="btn_name_1" value="{{=it.footer.ft1.name}}"></td>
+        <td class="td2"><input placeholder="Кнопка 2" type="text" name="btn_name_2" value="{{=it.footer.ft2.name}}"></td>
+        <td class="td3"><input placeholder="Кнопка 3" type="text" name="btn_name_3" value="{{=it.footer.ft3.name}}"></td>
+    </tr>
+    <tr class="odd construct-btn">
+        <td class="name">Настройка кнопки <span class="info-red" data-title="Если поле ссылки пустое и выбрана форма, то по умолчанию форма обратной связи. Если нужна другая форма, то устанавливаем нужный тег формы. Например #automation-form. Если выбрано добавление в корзину, необходимо указать ид товара в поле ссылка.">(?)</span></td>
+        <td class="btn-block">
+            <select name="btn_type_1">
+                <option value='' {{? it.footer.ft1.form.type == '' }}selected="selected"{{?}}>Ссылка</option>
+                <option value='form' {{? it.footer.ft1.form.type == 'form'}}selected="selected"{{?}}>Форма</option>
+				<option value='basket_button' {{? it.footer.ft1.form.type == 'basket_button'}}selected="selected"{{?}}>В корзину</option>
+<!--				<option value='basket_link' {{? it.footer.ft1.form.type == 'basket_link'}}selected="selected"{{?}}>В корзину(ссылка)</option>-->
+			</select>
+            <input placeholder="Ссылка 1" type="text" name="btn_link_1" value="{{=it.footer.ft1.link}}">
+            <label>
+                <input type="checkbox" class="has-rel-nofollow1"
+                       data-selected="{{!it.footer.ft1.nofollow}}"
+                       value="section-rd--has-rel-nofollow">
+                Nofollow
+            </label>
+            <input placeholder="Заголовок модалки 1" type="text" name="btn_form_1" value="{{=it.footer.ft1.form.title}}">
+        </td>
+        <td class="btn-block td2">
+            <select name="btn_type_2">
+                <option value='' {{? it.footer.ft2.form.type == '' }}selected="selected"{{?}}>Ссылка</option>
+                <option value='form' {{? it.footer.ft2.form.type == 'form'}}selected="selected"{{?}}>Форма</option>
+				<option value='basket_button' {{? it.footer.ft2.form.type == 'basket_button'}}selected="selected"{{?}}>В корзину</option>
+<!--				<option value='basket_link' {{? it.footer.ft2.form.type == 'basket_link'}}selected="selected"{{?}}>В корзину(ссылка)</option>-->
+            </select>
+            <input placeholder="Ссылка 2" type="text" name="btn_link_2" value="{{=it.footer.ft2.link}}">
+            <label>
+                <input type="checkbox" class="has-rel-nofollow2"
+                       data-selected="{{!it.footer.ft2.nofollow}}"
+                       value="section-rd--has-rel-nofollow">
+                Nofollow
+            </label>
+            <input placeholder="Заголовок модалки 2" type="text" name="btn_form_2" value="{{=it.footer.ft2.form.title}}">
+        </td>
+        <td class="btn-block td3">
+            <select name="btn_type_3">
+                <option value='' {{? it.footer.ft3.form.type == '' }}selected="selected"{{?}}>Ссылка</option>
+                <option value='form' {{? it.footer.ft3.form.type == 'form'}}selected="selected"{{?}}>Форма</option>
+				<option value='basket_button' {{? it.footer.ft3.form.type == 'basket_button'}}selected="selected"{{?}}>В корзину</option>
+<!--				<option value='basket_link' {{? it.footer.ft3.form.type == 'basket_link'}}selected="selected"{{?}}>В корзину(ссылка)</option>-->
+			</select>
+            <input placeholder="Ссылка 3" type="text" name="btn_link_3" value="{{=it.footer.ft3.link}}">
+            <label>
+                <input type="checkbox" class="has-rel-nofollow3"
+                       data-selected="{{!it.footer.ft3.nofollow}}"
+                       value="section-rd--has-rel-nofollow">
+                Nofollow
+            </label>
+            <input placeholder="Заголовок модалки 3" type="text" name="btn_form_3" value="{{=it.footer.ft3.form.title}}">
+        </td>
+    </tr>
+    </tbody>
+</table>
+<input type="button" class="add-column" value="Добавить колонку"><input type="button" class="remove-column" value="Удалить колонку">
+<br>
+<hr class="bx-color-style">
+<div>Строки</div>
+<hr class="bx-color-style">
+<div class="sp-lists-result js-elements-comparison">
+
+</div>
+<input class="sp-lists-add-comparison" type="button" value="Добавить">
+<br><br>
+<table>
+    <tr>
+        <td class="adm-detail-content-cell-r">
+            <label><input type="checkbox" class="has-padding-bottom" data-selected="{{!it.hpb}}" value="section-rd--has-padding-bottom"> Отступ снизу</label>
+        </td>
+    </tr>
+</table>

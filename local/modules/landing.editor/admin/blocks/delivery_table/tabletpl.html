@@ -1,0 +1,64 @@
+
+<div class="js-elem-delivery_table">
+    <h4>Таблица</h4>
+    <table class="main-delivery_table">
+        <tbody class="js-row-area">
+        <tr>
+            <td>Заголовок таблицы</td>
+            <td colspan="3"><input type="text" class="element-body" name="th" value=""></td>
+            <td><input type="button" class="delete-row" value="X"></td>
+        </tr>
+        <tr>
+            <td>
+                <div>Название пункта</div>
+                <textarea class="element-body" name="td0" placeholder="Название пункта"></textarea>
+            </td>
+            <td class="td-icons">
+                <div>Добавить иконку</div>
+                <input type="button" class="element-btn" value="+">
+                <input type="hidden" class="element-body" name="td1" value="">
+            </td>
+            <td>
+                <div>Цена</div>
+                <input type="text" class="element-body" name="price" value="" placeholder="Цена">
+			</td>
+            <td class="td3">
+				<div>Тип ссылки <span class="info-red" data-title="Если поле ссылки пустое и выбрана форма, то по умолчанию форма обратной связи. Если нужна другая форма, то устанавливаем нужный тег формы. Например #automation-form">(?)</span></div>
+				<select name="btnType">
+					<option value='' selected="selected">Ссылка</option>
+					<option value='form'>Веб форма</option>
+					<option value='basket_button'>В корзину</option>
+				</select>
+				<div>Адрес ссылки</div>
+				<input type="text" class="element-body" name="btnLink" value="" placeholder="Адрес ссылки">
+                <br>
+                <label>
+                    <input type="checkbox" class="has-rel-nofollow"
+                           data-selected=""
+                           value="section-rd--has-rel-nofollow">
+                    Nofollow
+                </label>
+				<div>Заголовок ссылки</div>
+				<input type="text" class="element-body" name="btnHead" value="" placeholder="Заголовок ссылки">
+				<div>Название ссылки</div>
+				<input type="text" class="element-body" name="btnName" value="" placeholder="Название ссылки">
+            </td>
+            <td><input type="button" class="delete-row" value="X"></td>
+        </tr>
+        <tr>
+            <td>
+                <div>Количество подгружаемых строк на "Показать еще"</div>
+                <input type="text" name="cnt" value="" placeholder="Количество подгружаемых строк на Показать еще">
+            </td>
+            <td>
+                <label><input type="checkbox" class="show-all" data-selected="" value="Y">Показать все</label>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <input type="button" class="add-header" data-index="" value="Добавить заголовок">
+    <input type="button" class="add-row" data-index="" value="Добавить строку">
+    <input type="button" class="table-remove" data-index="" value="Удалить таблицу">
+    <br>
+    <hr class="bx-color-style">
+</div>

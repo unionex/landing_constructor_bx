@@ -1,0 +1,22 @@
+<div class="sp-item-heading">
+	<div class="sp-note">Заголовок блока</div>
+	<input class="js-heading" placeholder="Заголовок" type="text" value="{{!it.heading}}"/>
+</div>
+<div class="sp-item-heading">
+	<label>
+		<input class="sp-noindex" {{?it.noindex}}checked="checked" {{?}} type="checkbox" value="{{!it.noindex}}" name="noindex">
+		Закрыть блок от индексации
+	</label>
+</div>
+<div class="sp-lists-result js-elements">
+
+</div>
+<input class="sp-lists-add" type="button" value="Добавить">
+<br><br>
+<table>
+	<tr>
+		<td class="adm-detail-content-cell-r">
+			<label><input type="checkbox" class="has-padding-bottom" data-selected="{{!it.hpb}}" value="section-rd--has-padding-bottom"> Отступ снизу</label>
+		</td>
+	</tr>
+</table>

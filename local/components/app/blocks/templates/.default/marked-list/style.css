@@ -1,0 +1,21 @@
+.marked-list {
+  list-style: none;
+  padding-left: 35px;
+}
+.marked-list li {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 7px;
+  position: relative;
+}
+.marked-list li::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: -35px;
+  background: url("/local/templates/main/img/list-mark.svg");
+  background-size: cover;
+}

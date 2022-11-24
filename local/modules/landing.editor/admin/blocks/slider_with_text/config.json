@@ -1,0 +1,10 @@
+{
+  "title": "30. Слайдер с текстом",
+  "preview": "",
+  "sort": "300",
+  "js": [
+  ],
+  "templates": [
+    "items.html"
+  ]
+}

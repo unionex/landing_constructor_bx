@@ -1,0 +1,8 @@
+{{~it.elements :element:index}}
+<div class="sp-item js-elem-company">
+    <input id="inp{{=element.uid}}" class="input-element" name="inp{{=element.uid}}" value="{{=element.selected_element_id}}" size="5" type="text"/>
+    <input type="button" class="button-add" value="..."
+        onclick="jsUtils.OpenWindow('/bitrix/admin/iblock_element_search.php?lang=ru&IBLOCK_ID=53&n=inp{{=element.uid}}&iblockfix=y&tableId=block_uid-{{=element.uid}}',900,700);"/>
+    <input type="button" class="button-remove"  value="X"/>
+</div>
+{{~}}

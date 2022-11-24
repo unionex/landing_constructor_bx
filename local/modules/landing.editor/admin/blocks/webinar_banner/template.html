@@ -1,0 +1,22 @@
+<input type="button" value="Выбрать из библиотеки" name="select-medialib" class="adm-designed-file button-select-medialib">
+<div class="sp-base_image_item">
+	<input type="hidden" name="icon" class="file-val" value="{{!it.icon}}">
+	{{? it.icon}}
+	<img src="{{!it.icon}}"/>
+	{{?? !it.icon}}
+	<img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+	{{?}}
+	<div class="sp-base_image_item-panel">
+		<div class="sp-base_image_item-buttons">
+			<input class="sp-base_image_item-del" type="button" value="x" title="Удалить превью">
+		</div>
+	</div>
+</div>
+<div class="sp-note">Заголовок баннера</div>
+<input class="sp-item-text" type="text" name="head" placeholder="Заголовок" value="{{!it.head}}"/>
+<div class="sp-note">Текст баннера</div>
+<textarea  class="sp-text"  name="text" placeholder="Текст">{{!it.text}}</textarea>
+<div class="sp-note">Название кнопки</div>
+<input class="sp-item-text" type="text" name="btnName" placeholder="Название кнопки" value="{{!it.btnName}}"/>
+<div class="sp-note">Ссылка конпки</div>
+<input class="sp-item-text" type="text" name="btnLink" placeholder="Ссылка копки" value="{{!it.btnLink}}"/>

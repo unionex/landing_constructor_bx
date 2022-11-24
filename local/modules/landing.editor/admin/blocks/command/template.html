@@ -1,0 +1,17 @@
+<div class="sp-note">Заголовок</div>
+<input class="sp-item-text" type="text" name="head" placeholder="Заголовок" value="{{!it.head}}"/>
+<div class="sp-note">Текст на растяжке</div>
+<textarea  class="sp-text tinymce-70"  name="text" placeholder="Текст">{{!it.text}}</textarea>
+<div class="sp-note">Тип кнопки <span class="info-red" data-title="Если поле ссылки пустое и выбрана форма, то по умолчанию форма обратной связи. Если нужна другая форма, то устанавливаем нужный тег формы. Например #automation-form. Если выбрано добавление в корзину, необходимо указать ид товара в поле ссылка.">(?)</span></div>
+<select name="btnType">
+	<option value='' {{? it.btnType == '' }}selected="selected"{{?}}>Ссылка</option>
+	<option value='form' {{? it.btnType == 'form'}}selected="selected"{{?}}>Веб форма</option>
+	<option value='basket_button' {{? it.btnType == 'basket_button'}}selected="selected"{{?}}>В корзину</option>
+	<option value='none' {{? it.btnType == 'none'}}selected="selected"{{?}}>Без правой панели</option>
+</select>
+<div class="sp-note">Название кнопки</div>
+<input class="sp-item-text" type="text" name="btnName" placeholder="Название кнопки" value="{{!it.btnName}}"/>
+<div class="sp-note">Ссылка конпки</div>
+<input class="sp-item-text" type="text" name="btnLink" placeholder="Ссылка копки" value="{{!it.btnLink}}"/>
+<div class="sp-note">Заголовок веб формы</div>
+<input class="sp-item-text" type="text" name="btnHead" placeholder="Заголовок веб формы" value="{{!it.btnHead}}"/>
